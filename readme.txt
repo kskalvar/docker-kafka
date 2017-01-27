@@ -11,3 +11,5 @@ wget localhost:9092
 
 # attach
 docker exec -it kafka bash
+
+/kafka_2.11-0.9.0.0/bin/kafka-topics.sh --list --zookeeper localhost:2181
