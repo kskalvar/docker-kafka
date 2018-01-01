@@ -1,9 +1,9 @@
 FROM ubuntu:14.04
 
-ENV KAFKA_VERSION 1.0.0
-ENV KAFKA_RELEASE 2.11
-ENV KAFKA_MEDIA kafka_$KAFKA_RELEASE-$KAFKA_VERSION
-ENV KAFKA_MIRROR http://apache.osuosl.org/kafka/
+ENV KAFKA_VERSION 0.9.0.1
+ENV SCALA_VERSION 2.10
+ENV KAFKA_MEDIA kafka_$SCALA_VERSION-$KAFKA_VERSION
+ENV KAFKA_MIRROR http://archive.apache.org/dist/kafka
 
 RUN apt-get update && apt-get install -y software-properties-common && add-apt-repository ppa:openjdk-r/ppa && apt-get update
 RUN apt-get install -y openjdk-8-jdk
